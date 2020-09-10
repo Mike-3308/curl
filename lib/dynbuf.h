@@ -23,8 +23,8 @@
  ***************************************************************************/
 
 #ifndef BUILDING_LIBCURL
-/* this renames the functions so that the tool code can use the same code with
-   getting symbol collisions */
+/* this renames the functions so that the tool code can use the same code
+   without getting symbol collisions */
 #define Curl_dyn_init(a,b) curlx_dyn_init(a,b)
 #define Curl_dyn_add(a,b) curlx_dyn_add(a,b)
 #define Curl_dyn_addn(a,b,c) curlx_dyn_addn(a,b,c)
